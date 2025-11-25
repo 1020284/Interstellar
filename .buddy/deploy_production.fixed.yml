@@ -1,0 +1,7 @@
+- pipeline: staging-build
+  name: deploy_production
+  refs:
+  - :default
+  events:
+  - type: WEBHOOK
+  fail_on_prepare_env_warning: true
